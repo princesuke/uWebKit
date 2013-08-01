@@ -24,6 +24,10 @@ uWebKit currently supports Windows (32 and 64 bit deploys), OSX (32 bit with 64 
 
 If you're interested in a **full C++ source code license hosted on GitHub** please contact: sales@uwebkit.com   
 
+### Discussion
+
+Please use this [thread on the Unity Forums](http://forum.unity3d.com/threads/193978-uWebKit-HTML-CSS-HTTPS-Javascript-integration-for-Unity-Pro)
+
 ### Issues
 
 Please report issues with uWebKit using the [GitHub Issue Tracker](https://github.com/TheEngineCompany/uWebKitRelease/issues)
