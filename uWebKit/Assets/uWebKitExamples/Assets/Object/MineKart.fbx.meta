@@ -1,0 +1,66 @@
+fileFormatVersion: 1
+guid: d5af38de26b7c4762a6abb96e1f1412d
+ModelImporter:
+  importerVersion: 7
+  meshes:
+    scaleFactor: 1
+    useFileUnits: 1
+    meshCompression: 0
+    generateColliders: 0
+    swapUVs: 0
+    generateSecondaryUV: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalImportMode: 0
+    tangentImportMode: 1
+    smoothingAngle: 60
+    splitTangents: 1
+  materials:
+    generation: 1
+  animations:
+    generation: 3
+    bakeAnimations: 0
+    animationCompression: 1
+    animationWrapMode: 0
+    splitAnimations: 1
+  nodeInfo:
+    Cylinder_003:
+    - 100000
+    - 400000
+    - 3300000
+    - 2300000
+    Cylinder_002:
+    - 100002
+    - 400002
+    - 3300002
+    - 2300002
+    Cylinder_001:
+    - 100004
+    - 400004
+    - 3300004
+    - 2300004
+    //RootNode:
+    - 100006
+    - 400006
+    - 11100000
+    Cube:
+    - 100008
+    - 400008
+    - 3300006
+    - 2300006
+    Cylinder:
+    - 100010
+    - 400010
+    - 3300008
+    - 2300008
+AssetImporter:
+  importerVersion: 1
+  fileIDToRecycleName:
+    4300000: Cylinder_003
+    4300002: Cylinder_002
+    4300004: Cylinder_001
+    4300006: Cylinder
+    4300008: Cube

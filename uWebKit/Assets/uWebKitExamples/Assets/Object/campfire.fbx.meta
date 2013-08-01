@@ -1,0 +1,126 @@
+fileFormatVersion: 1
+guid: 3c4d411ef626b47a092d30e3bdd8f815
+ModelImporter:
+  importerVersion: 7
+  meshes:
+    scaleFactor: 1
+    useFileUnits: 1
+    meshCompression: 0
+    generateColliders: 0
+    swapUVs: 0
+    generateSecondaryUV: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalImportMode: 0
+    tangentImportMode: 1
+    smoothingAngle: 60
+    splitTangents: 1
+  materials:
+    generation: 1
+  animations:
+    generation: 3
+    bakeAnimations: 0
+    animationCompression: 1
+    animationWrapMode: 0
+    splitAnimations: 1
+  nodeInfo:
+    //RootNode:
+    - 100000
+    - 400000
+    - 11100000
+    Cube_001:
+    - 100002
+    - 400002
+    - 3300000
+    - 2300000
+    Cube_002:
+    - 100004
+    - 400004
+    - 3300002
+    - 2300002
+    log_1:
+    - 100006
+    - 400006
+    - 3300004
+    - 2300004
+    Cube_006:
+    - 100008
+    - 400008
+    - 3300006
+    - 2300006
+    Cube_003:
+    - 100010
+    - 400010
+    - 3300008
+    - 2300008
+    log_1_001:
+    - 100012
+    - 400012
+    - 3300010
+    - 2300010
+    Cube_008:
+    - 100014
+    - 400014
+    - 3300012
+    - 2300012
+    log_1_003:
+    - 100016
+    - 400016
+    - 3300014
+    - 2300014
+    log_1_004:
+    - 100018
+    - 400018
+    - 3300016
+    - 2300016
+    log_1_002:
+    - 100020
+    - 400020
+    - 3300018
+    - 2300018
+    log_1_005:
+    - 100022
+    - 400022
+    - 3300020
+    - 2300020
+    Cube_000:
+    - 100024
+    - 400024
+    - 3300022
+    - 2300022
+    Cube_004:
+    - 100026
+    - 400026
+    - 3300024
+    - 2300024
+    Cube_007:
+    - 100028
+    - 400028
+    - 3300026
+    - 2300026
+    Cube_009:
+    - 100030
+    - 400030
+    - 3300028
+    - 2300028
+AssetImporter:
+  importerVersion: 1
+  fileIDToRecycleName:
+    4300000: log_1_005
+    4300002: log_1_004
+    4300004: log_1_003
+    4300006: log_1_002
+    4300008: log_1_001
+    4300010: Cube_009
+    4300012: Cube_008
+    4300014: Cube_004
+    4300016: Cube_000
+    4300018: Cube_007
+    4300020: Cube_006
+    4300022: Cube_003
+    4300024: Cube_002
+    4300026: Cube_001
+    4300028: log_1

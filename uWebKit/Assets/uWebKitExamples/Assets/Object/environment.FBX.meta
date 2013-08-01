@@ -1,0 +1,174 @@
+fileFormatVersion: 1
+guid: 589885640c41b426a9f0e09276094dc3
+ModelImporter:
+  importerVersion: 7
+  meshes:
+    scaleFactor: 1
+    useFileUnits: 1
+    meshCompression: 0
+    generateColliders: 0
+    swapUVs: 0
+    generateSecondaryUV: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalImportMode: 0
+    tangentImportMode: 1
+    smoothingAngle: 60
+    splitTangents: 1
+  materials:
+    generation: 1
+  animations:
+    generation: 3
+    bakeAnimations: 0
+    animationCompression: 1
+    animationWrapMode: 0
+    splitAnimations: 1
+  nodeInfo:
+    //RootNode:
+    - 100000
+    - 400000
+    - 11100000
+    Perif04:
+    - 100002
+    - 400002
+    - 3300000
+    - 2300000
+    Perif03:
+    - 100004
+    - 400004
+    - 3300002
+    - 2300002
+    Perif05:
+    - 100006
+    - 400006
+    - 3300004
+    - 2300004
+    Perif01:
+    - 100008
+    - 400008
+    - 3300006
+    - 2300006
+    ground01:
+    - 100010
+    - 400010
+    - 3300008
+    - 2300008
+    Perif02:
+    - 100012
+    - 400012
+    - 3300010
+    - 2300010
+    Clouds:
+    - 100014
+    - 400014
+    - 3300012
+    - 2300012
+    rock01:
+    - 100016
+    - 400016
+    - 3300014
+    - 2300014
+    Cabin:
+    - 100018
+    - 400018
+    - 3300016
+    - 2300016
+    fence04:
+    - 100020
+    - 400020
+    - 3300018
+    - 2300018
+    fence03:
+    - 100022
+    - 400022
+    - 3300020
+    - 2300020
+    fence01:
+    - 100024
+    - 400024
+    - 3300022
+    - 2300022
+    fenceSign01:
+    - 100026
+    - 400026
+    - 3300024
+    - 2300024
+    path02:
+    - 100028
+    - 400028
+    - 3300026
+    - 2300026
+    fenceSign02:
+    - 100030
+    - 400030
+    - 3300028
+    - 2300028
+    creek02:
+    - 100032
+    - 400032
+    - 3300030
+    - 2300030
+    fence02:
+    - 100034
+    - 400034
+    - 3300032
+    - 2300032
+    bridge01:
+    - 100036
+    - 400036
+    - 3300034
+    - 2300034
+    path01:
+    - 100038
+    - 400038
+    - 3300036
+    - 2300036
+    creek01:
+    - 100040
+    - 400040
+    - 3300038
+    - 2300038
+    creek_waterfall:
+    - 100042
+    - 400042
+    - 3300040
+    - 2300040
+    ground02:
+    - 100044
+    - 400044
+    - 3300042
+    - 2300042
+    rockMtn:
+    - 100046
+    - 400046
+    - 3300044
+    - 2300044
+AssetImporter:
+  importerVersion: 1
+  fileIDToRecycleName:
+    4300000: ground02
+    4300002: rockMtn
+    4300004: creek01
+    4300006: path01
+    4300008: creek_waterfall
+    4300010: fence02
+    4300012: creek02
+    4300014: bridge01
+    4300016: path02
+    4300018: fenceSign01
+    4300020: fenceSign02
+    4300022: fence03
+    4300024: fence04
+    4300026: fence01
+    4300028: rock01
+    4300030: Clouds
+    4300032: Cabin
+    4300034: ground01
+    4300036: Perif01
+    4300038: Perif02
+    4300040: Perif03
+    4300042: Perif04
+    4300044: Perif05

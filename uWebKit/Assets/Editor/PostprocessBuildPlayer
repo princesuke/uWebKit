@@ -1,0 +1,7 @@
+#!/bin/sh
+
+rm -rf "$1/uWebKit/Native/Mac/UWKProcess.app"
+mkdir -p "$1/Contents/uWebKit/Native/Mac"
+cp -R Assets/Editor/uWebKit/Native/Mac/UWKProcess.app "$1/Contents/uWebKit/Native/Mac"
+
+
