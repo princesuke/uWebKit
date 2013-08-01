@@ -275,7 +275,7 @@ public class UWKActivation : MonoBehaviour
 			
 			if (GUILayout.Button ("Get Trial Key", GUILayout.MaxWidth (92), GUILayout.Height (64))) {
 				
-				Application.OpenURL ("http://www.uwebkit.com/uwebkit/trial");
+				Application.OpenURL ("http://uwebkit.com/download");
 				
 			}
 			
