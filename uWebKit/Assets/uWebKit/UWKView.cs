@@ -333,8 +333,11 @@ public class UWKView : MonoBehaviour
 		// listen in on inbound commands
 		Plugin.ProcessInbound += processInbound;
 		
+		#if !UNITY_EDITOR && UNITY_IPHONE		
 		_mobileRect = new Rect (0, 0, Width, Height);
-		_mobileRectDirty = false;
+		// make sure that the dirty flag is set for initial load
+		_mobileRectDirty = true;
+		#endif
 		
 		if (JSPopup)
 			validate ();

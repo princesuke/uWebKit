@@ -1,0 +1,50 @@
+
+In the Classes/UnityAppController.mm file
+
+1) At the top of the file, after:
+
+#include "Unity/GlesHelper.h"
+
+Add this include:
+
+#include "../Libraries/UWKWebEngine.h"
+
+2) Change the "didFinishLaunchingWithOptions" function to:
+
+- (BOOL)application:(UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary*)launchOptions
+{
+	printf_console("-> applicationDidFinishLaunching()\n");
+	// get local notification
+	if (&UIApplicationLaunchOptionsLocalNotificationKey != nil)
+	{
+		UILocalNotification *notification = [launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
+		if (notification)
+			UnitySendLocalNotification(notification);
+		}
+
+	// get remote notification
+	if (&UIApplicationLaunchOptionsRemoteNotificationKey != nil)
+	{
+		NSDictionary *notification = [launchOptions objectForKey:UIApplicationLaunchOptionsRemoteNotificationKey];
+		if (notification)
+			UnitySendRemoteNotification(notification);
+		}
+
+	if ([UIDevice currentDevice].generatesDeviceOrientationNotifications == NO)
+		[[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+
+	[DisplayManager Initialize];
+	_mainDisplay = [[DisplayManager Instance] mainDisplay];
+	[_mainDisplay createView:YES showRightAway:NO];
+
+	[KeyboardDelegate Initialize];
+	CreateViewHierarchy();
+
+	[self performSelector:@selector(startUnity:) withObject:application afterDelay:0];
+	
+	// UWEBKIT    
+    UWKWebEngine.sInstance.appController = self;
+
+	return NO;
+}
+
