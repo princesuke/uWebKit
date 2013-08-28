@@ -1,6 +1,6 @@
 ### uWebKit for Unity Pro - Binary and Script Repository
 
-![alt uWebKit](http://uwebkit.com/wp-content/uploads/2013/01/uWebKit_OverviewSplash3.jpg)
+[![alt uWebKit](http://uwebkit.com/wp-content/uploads/2013/01/uWebKit_OverviewSplash3.jpg)](http://www.uWebKit.com)
 
 This repository contains the latest [uWebKit](http://www.uWebKit.com) binary and C# script sources.
 
