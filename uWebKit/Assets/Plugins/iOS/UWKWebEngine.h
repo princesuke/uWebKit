@@ -4,7 +4,7 @@
   * sales@uwebkit.com
 *******************************************/
 
-#import "AppController.h"
+#import "UnityAppController.h"
 #import "UWKPlugin.h"
 #import "UWKWebView.h"
 
@@ -12,7 +12,7 @@
 // the managed Unity side
 @interface UWKWebEngine : NSObject {
 	// The Unity App controller
-	AppController *appController;
+	UnityAppController *appController;
 
 	// Our webview lookup table
 	NSMutableDictionary *viewLookup;
@@ -45,7 +45,7 @@
 
 
 // properties
-@property (retain) AppController *appController;
+@property (retain) UnityAppController *appController;
 
 @property (retain) NSMutableDictionary *viewLookup;
 

@@ -7,6 +7,7 @@
 #import "UWKWebEngine.h"
 #import "UWKWebView.h"
 #import "UWKPlugin.h"
+#import "../Classes/UnityAppController.h"  
 
 // The Unity Window
 extern UIWindow *_window;
@@ -325,7 +326,8 @@ extern UIWindow *_window;
 	keyboardVisible = false;
 }
 
-+ (UWKWebEngine *)sInstance {
++ (UWKWebEngine *)sInstance 
+{
 	static UWKWebEngine *instance;
 
 	@synchronized(self) {
@@ -336,10 +338,15 @@ extern UIWindow *_window;
 
 		return instance;
 	}
+
 	return instance;
 }
 
-- (UWKWebEngine *)init {
+- (UWKWebEngine *)init 
+{
+
+	appController = GetAppController();
+	
 	viewLookup = [[NSMutableDictionary alloc] init];
 
 	// We aren't fully initialized until the managed side has received
