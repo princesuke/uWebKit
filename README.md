@@ -30,6 +30,6 @@ Please use this [thread on the Unity Forums](http://forum.unity3d.com/threads/19
 
 ### Issues
 
-Please report issues with uWebKit using the [GitHub Issue Tracker](https://github.com/TheEngineCompany/uWebKitRelease/issues)
+Please report issues with uWebKit using the [GitHub Issue Tracker](https://github.com/TheEngineCompany/uWebKit/issues)
 
 uWebKit is (C) 2013 The Engine Co, LLC
