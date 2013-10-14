@@ -26,6 +26,6 @@ If you're interested in a **full C++ source code license hosted on GitHub** plea
 
 ### Issues
 
-Please report issues with uWebKit using the [GitHub Issue Tracker](https://github.com/TheEngineCompany/uWebKitRelease/issues)
+Please report issues with uWebKit using the [GitHub Issue Tracker](https://github.com/TheEngineCompany/uWebKit/issues)
 
 uWebKit is (C) 2013 The Engine Co, LLC
