@@ -188,7 +188,15 @@ public class UWKActivation : MonoBehaviour
 			
 			GUILayout.BeginVertical ();
 			
-			GUILayout.Space (32);
+			Color previousColor = GUI.color;
+			
+			GUI.color = Color.cyan;
+			
+			GUILayout.Label ("IMPORTANT: Please note that if you are behind a proxy, edit uWebKit/UWKConfig.cs to set proxy settings");
+			
+			GUI.color = previousColor;
+			
+			GUILayout.Space (8);			
 			
 			GUILayout.BeginHorizontal ();
 			
@@ -234,7 +242,7 @@ public class UWKActivation : MonoBehaviour
 				
 			} else {
 				GUILayout.Space (64);
-			}
+			}			
 			
 			GUILayout.BeginHorizontal ();
 			

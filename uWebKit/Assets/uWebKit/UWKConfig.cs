@@ -19,14 +19,6 @@ namespace UWK
 		/// </summary>
 		public static bool AllowJavascriptPopups = true;
 		
-		//  Set Authentication information here
-		
-		public static bool AuthEnabled = false;
-		
-		public static string AuthUsername = "";
-		
-		public static string AuthPassword = "";
-
 		//  Set proxy information here
 		
 		/// <summary>
@@ -54,6 +46,15 @@ namespace UWK
 		/// The proxy password.
 		/// </summary>
 		public static string ProxyPassword = "";
+		
+		//  Set Auth information here
+		
+		public static bool AuthEnabled = false;
+		
+		public static string AuthUsername = "";
+		
+		public static string AuthPassword = "";
+		
 		
 		// Enable to debug the UWKProcess (this should always be off for iOS builds)				
 #if ((!UNITY_IPHONE && !UNITY_WEBPLAYER) || UNITY_EDITOR)
