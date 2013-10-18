@@ -8,13 +8,13 @@ This repository contains the latest [uWebKit](http://www.uWebKit.com) binary and
 
 #### Please visit http://www.uWebKit.com to receive an activation key
 
-##### Current Stable Version (1.4)
+##### Current Stable Version (1.5)
 
-[uWebKit 1.4 Package Download](http://www.uwebkit.com/static/downloads/uwebkit/uWebKit_v14.unitypackage) 
+[uWebKit 1.5 Package Download](http://www.uwebkit.com/static/downloads/uwebkit/uWebKit_v15.unitypackage) 
 
-##### Current Beta Version (1.5c)
+##### Previous Version (1.4)
 
-[uWebKit 1.5c Package Download](http://www.uwebkit.com/static/downloads/uwebkit/uWebKit_v15c.unitypackage)
+[uWebKit 1.4 Package Download](http://www.uwebkit.com/static/downloads/uwebkit/uWebKit_v14.unitypackage)
 
 #### Platforms
 
@@ -30,6 +30,6 @@ Please use this [thread on the Unity Forums](http://forum.unity3d.com/threads/19
 
 ### Issues
 
-Please report issues with uWebKit using the [GitHub Issue Tracker](https://github.com/TheEngineCompany/uWebKit/issues)
+Please report issues with uWebKit using the [GitHub Issue Tracker](https://github.com/uWebKit/uWebKit/issues)
 
-uWebKit is (C) 2013 The Engine Co, LLC
+uWebKit is (C) 2013 THUNDERBEAST GAMES, LLC
