@@ -6,7 +6,7 @@ This repository contains the latest [uWebKit](http://www.uWebKit.com) binary and
 
 ### Download Package for Unity 3.5 & Unity 4 
 
-#### Please visit http://www.uWebKit.com to receive an activation key
+#### Please visit [http://www.uWebKit.com](http://www.uWebKit.com/download) to receive an activation key
 
 ##### Current Stable Version (1.5)
 
