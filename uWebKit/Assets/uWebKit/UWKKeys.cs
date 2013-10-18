@@ -1,6 +1,6 @@
 /******************************************
   * uWebKit 
-  * (c) 2013 The Engine Co. LLC
+  * (c) 2013 THUNDERBEAST GAMES, LLC
   * sales@uwebkit.com
 *******************************************/
 
