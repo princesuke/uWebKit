@@ -304,6 +304,9 @@ public class UWKView : MonoBehaviour
 	int _windowId = 0;
 	
 	Vector2 mousePos = new Vector2(-1000, -1000);
+		
+	// we need to track mouse states and Unity's OnGUI method may be called more than once
+	bool[] mouseStates = new bool[3] {false, false, false};
 
 	#endregion
 
@@ -333,11 +336,8 @@ public class UWKView : MonoBehaviour
 		// listen in on inbound commands
 		Plugin.ProcessInbound += processInbound;
 		
-		#if !UNITY_EDITOR && UNITY_IPHONE		
 		_mobileRect = new Rect (0, 0, Width, Height);
-		// make sure that the dirty flag is set for initial load
-		_mobileRectDirty = true;
-		#endif
+		_mobileRectDirty = false;
 		
 		if (JSPopup)
 			validate ();
@@ -708,14 +708,23 @@ public class UWKView : MonoBehaviour
 		}
 		
 		for (int i = 0; i < 3; i++) {
+			
 			if (Input.GetMouseButtonDown (i)) {
 				
-				OnMouseButtonDown (lastMouseX - xOffset, lastMouseY - yOffset, i);
+				if (!mouseStates[i])
+				{
+					mouseStates[i] = true;
+					OnMouseButtonDown (lastMouseX - xOffset, lastMouseY - yOffset, i);
+				}
 			}
 			
 			if (Input.GetMouseButtonUp (i)) {
 				
-				OnMouseButtonUp (lastMouseX - xOffset, lastMouseY - yOffset, i);
+				if (mouseStates[i])
+				{
+					mouseStates[i] = false;
+					OnMouseButtonUp (lastMouseX - xOffset, lastMouseY - yOffset, i);
+				}
 				
 			}
 			
