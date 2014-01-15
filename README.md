@@ -12,6 +12,10 @@ This repository contains the latest [uWebKit](http://www.uWebKit.com) binary and
 
 [uWebKit 1.5 Package Download](http://www.uwebkit.com/static/downloads/uwebkit/uWebKit_v15.unitypackage) 
 
+##### Current Test Version (1.5.1)
+
+[uWebKit 1.5.1 Package Download](http://www.uwebkit.com/static/downloads/uwebkit/uWebKit_v151.unitypackage) 
+
 ##### Previous Version (1.4)
 
 [uWebKit 1.4 Package Download](http://www.uwebkit.com/static/downloads/uwebkit/uWebKit_v14.unitypackage)
