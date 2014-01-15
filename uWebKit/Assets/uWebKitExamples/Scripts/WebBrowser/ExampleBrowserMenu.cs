@@ -17,6 +17,8 @@ public class ExampleBrowserMenu : MonoBehaviour
 	bool invert = true;
 	
 	string jquery;
+
+	int zoomFactor = 100;
 	
 	List<UWKView> jqueryLoaded = new List<UWKView>();
 
@@ -87,7 +89,29 @@ public class ExampleBrowserMenu : MonoBehaviour
 				v = 1.0f;
 			browser.transparency = v;
 		}
-		
+
+		brect.y += 50;
+		if (GUI.Button (brect, "Zoom +")) {
+
+			zoomFactor += 10;
+
+			if (zoomFactor > 200)
+				zoomFactor = 200;
+
+			browser.CurrentView.ZoomFactor = zoomFactor;
+		}	
+
+		brect.y += 50;
+		if (GUI.Button (brect, "Zoom -")) {
+			
+			zoomFactor -= 10;
+			
+			if (zoomFactor < 10)
+				zoomFactor = 10;
+			
+			browser.CurrentView.ZoomFactor = zoomFactor;
+		}	
+
 		brect.y += 50;
 		if (GUI.Button (brect, "Toggle Alpha Mask")) {
 			browser.CurrentView.AlphaMask = !browser.CurrentView.AlphaMask;

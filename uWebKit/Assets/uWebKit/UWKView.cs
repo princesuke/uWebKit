@@ -236,6 +236,20 @@ public class UWKView : MonoBehaviour
 			_transparency = value;
 		}
 	}
+
+	/// <summary>
+	/// Sets the Zoom Factor of the page making the content layout either smaller or larger 
+	/// Default is 100
+	/// </summary>
+	public int ZoomFactor {
+		get { return _zoomFactor; }
+		set {
+			if (_zoomFactor != value) {
+				_zoomFactor = value;
+				_zoomFactorDirty = true;
+			}
+		}
+	}
 	
 	/// <summary>
 	/// Gets or sets the rectangle where the view is drawn on iOS
@@ -297,8 +311,13 @@ public class UWKView : MonoBehaviour
 	Rect _mobileRect;
 	bool _alphaMask = false;
 	float _transparency = 1.0f;
+
+	int _zoomFactor = 100;
+	bool _zoomFactorDirty = false;
+
 	bool _visible = true;
 	bool _visibleDirty = true;
+
 	static int sWindowId = 10000;
 	public static int sFrontWindow = 10000;
 	int _windowId = 0;
@@ -362,7 +381,13 @@ public class UWKView : MonoBehaviour
 			cmd.Post ();
 			activeDirty = false;
 		}
-		
+
+		if (_zoomFactorDirty) {
+			Command cmd = Command.NewCommand ("ZOOM", Name, _zoomFactor);
+			cmd.Post ();
+			_zoomFactorDirty = false;
+		}
+				
 		if (_mobileRectDirty) {
 			Command cmd = Command.NewCommand ("MRCT", Name, _mobileRect.x, _mobileRect.y, _mobileRect.width, _mobileRect.height);
 			cmd.Post ();
